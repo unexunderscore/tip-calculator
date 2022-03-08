@@ -34,7 +34,9 @@ body {
     margin: 2rem 2rem 2rem 0;
     background-color: hsl(183, 100%, 15%);
     border-radius: 15px;
-    width: 484px;
+    width: 470px;
+    color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
 }
 
 .dollar-icon{
@@ -47,6 +49,23 @@ body {
     margin: 2.82rem 0 3rem 3rem;
     width: 500px;
 }
+.custom label {
+    display: none;
+}
+
+#custom-input{
+    margin: 1rem 0.8rem 0 0;
+    border:none;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    width: 117px;
+    height: 48px;
+    color: hsl(186, 14%, 43%);
+    background-color: hsl(189, 41%, 97%);
+}
+
+
 
 #bill, #numbOfPeople{
     margin-top: 0.5rem;
@@ -65,11 +84,11 @@ body {
     color:  hsl(186, 14%, 43%);
 }
 
-#bill:hover, #numbOfPeople{
+#bill:hover, #numbOfPeople, #custom-input{
     cursor: pointer;
 }
 
-#bill:focus, #numbOfPeople:focus{
+#bill:focus, #numbOfPeople:focus, #custom-input:focus{
     outline:  2px solid hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
@@ -94,18 +113,7 @@ body {
     height: 48px;
 }
 
-.custom{
-    padding-top: 0.4rem;
-    margin: 1rem 0.8rem 0 0;
-    text-align: center;
-    align-items: center;
-    font-size: 24px;
-    color: hsl(186, 14%, 43%);
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 5px;
-    width: 120px;
-    height: 48px;
-}
+
 
 .options:hover, .custom:hover{
     cursor: pointer;
@@ -125,4 +133,10 @@ body {
     position: absolute;
     margin-top: 1.4rem;
     margin-left: 1rem;
+}
+
+
+.perPersone{
+    font-size: 14px;
+    color:hsl(184, 14%, 56%);
 }

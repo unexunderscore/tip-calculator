@@ -50,7 +50,10 @@
   <div class="options">15%</div>
   <div class="options">25%</div>
   <div class="options">50%</div>
-  <div class="custom">Custom</div> 
+  <div class="custom">
+    <label for="custom-input"></label>
+    <input id="custom-input" type="text" value="Custom"  onkeypress='validate(event)'>
+  </div> 
   </div>
 </div>
 
@@ -60,7 +63,7 @@
 
   <label for="numbOfPeople">Number of People</label> <br>
   <img class="person-icon" src="./images/icon-person.svg" alt="Person icon" >
-  <input id="numbOfPeople" type="text" value="0"  onkeypress='validate(event)'>
+  <input id="numbOfPeople" type="text" value="0"  onkeypress='validate_people(event)'>
 
 </div>
 </div>
@@ -68,14 +71,17 @@
 
   <div class="tip-amount">
 
-
+    <div class="tipPerPersone">
     Tip Amount
-    / person
-
-    Total
-    / person
-
-    Reset
+    <div class="perPersone">/ person</div>
+    </div>
+    <div class="totalPerPersone">
+      Total
+      <div  class="perPersone">/ person</div>
+    </div>
+    
+    <div class="reset-option">Reset</div>
+    
   </div>   
 
     </div> <!--INNER CARD END DIV-->
