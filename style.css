@@ -31,10 +31,10 @@ body {
 }
 
 .tip-amount{
-    margin: 2rem 0 2rem;
+    margin: 2rem 2rem 2rem 0;
     background-color: hsl(183, 100%, 15%);
     border-radius: 15px;
-    width: 550px;
+    width: 484px;
 }
 
 .dollar-icon{
