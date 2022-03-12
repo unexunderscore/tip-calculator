@@ -227,6 +227,10 @@ body {
 @media screen and (max-width: 940px) {
     
 
+    #errorNumberBill{
+        margin-left: 1rem;
+    }
+
     .logo{
         margin: 0 0 2rem 0;
     }
@@ -335,7 +339,7 @@ body {
     }
 
     #errorNumber{
-        margin-left: 1rem
+        margin-left: 0rem
     }
 
     #tipAmountSummary, #totalAmountSummary{
