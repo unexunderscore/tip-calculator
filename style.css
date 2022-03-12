@@ -94,8 +94,13 @@ body {
 #bill:hover, #numbOfPeople, #custom-input{
     cursor: pointer;
 }
+#custom-input:focus{
+    outline: unset;
+}
 
-#bill:focus, #numbOfPeople:focus, #custom-input:focus{
+
+
+#bill:focus, #numbOfPeople:focus {
     outline:  2px solid hsl(172, 67%, 45%);
 }
 
@@ -206,6 +211,13 @@ body {
     text-align: right;
     color: rgba(218, 47, 47, 0.685);
     margin-left: 5rem;
+}
+
+#errorNumberBill{
+    display: none;
+    text-align: right;
+    color: rgba(218, 47, 47, 0.685);
+    margin-left: 12rem;
 }
 
 .logo:hover{

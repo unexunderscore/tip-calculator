@@ -53,7 +53,7 @@ const nPeople = document.getElementById('numbOfPeople');
 
   //Selecting error div
 const error = document.getElementById('errorNumber');
-
+const errorBill = document.getElementById('errorNumberBill');
 
   //Selecting custom input
 const custom = document.getElementById('custom-input');
@@ -67,14 +67,24 @@ function tipCalculator(){
 
   // Checking number of people (divider number) is zero, if yes then error shows up.
   if(nPeople.value == 0){
+    error.innerText = "Can't be zero";
     error.style.display = "inline";
     nPeople.style.outline = "2px solid rgba(218, 47, 47, 0.685)"; 
     return;
 
-  } else {
+  } else if(isNaN(nPeople.value)){
+    error.innerText = "Can't be text";
+    error.style.display = "inline";
+    nPeople.style.outline = "2px solid rgba(218, 47, 47, 0.685)"; 
+    return;
+  }
+  else {
     error.style.display = "none";
     nPeople.style.outline = "none";
   }
+
+  
+
   
   // Calculating the bill and tip
   tipPer = (((bill.value)*(divider/100))/(nPeople.value));
@@ -96,11 +106,38 @@ function reset(){
   tipAmount.style.display = "none";
   totalAmount.style.display = "none";
   error.style.display = "none";
+  errorBill.style.display = "none";
   nPeople.style.outline = "none";
-
-
+  bill.style.outline = "none";
+  custom.style.outline = "none";
+  
   bill.value = '';
   nPeople.value = '';
   custom.value = '';
+  
+}
+
+function checkCustomInput(){
+  if(isNaN(custom.value)){
+    custom.style.outline = "2px solid rgba(218, 47, 47, 0.685)"; 
+    return;
+  }
+  else {
+    custom.style.outline = "2px solid hsl(172, 67%, 45%)"; 
+    
+  }
+}
+
+function checkBillInput(){
+  if(isNaN(bill.value)){
+    errorBill.innerText = "Can't be text";
+    errorBill.style.display = "inline";
+    bill.style.outline = "2px solid rgba(218, 47, 47, 0.685)"; 
+    return;
+
+  }else {
+    errorBill.style.display = "none";
+    bill.style.outline = "none";
+  }
 
 }

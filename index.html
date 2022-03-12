@@ -34,9 +34,9 @@
       <div class="tip-select">
 
   <div class="billy">
-  <label for="bill">Bill</label> <br>
+  <label for="bill">Bill</label> <span id="errorNumberBill">Can't be text</span> <br>
   <img class="dollar-icon" src="./images/icon-dollar.svg" alt="Dollar icon" >
-  <input id="bill" type="text" placeholder="0" onkeypress='validate(event)'>
+  <input id="bill" type="text" placeholder="0" onkeypress='validate(event)' onclick="">
 </div>   
 
 <div class="select-tips">
@@ -45,14 +45,14 @@
   Select Tip %
   </div>
   <div class="group-options">
-  <button id="fiveP" class="options" value="5" onclick="tipCalculator()">5%</button>
-  <button id="tenP" value="10" class="options" onclick="tipCalculator()">10%</button>
-  <button id="fifteenP" value="15" class="options" onclick="tipCalculator()">15%</button>
-  <button id="twentyFiveP" value="25" class="options" onclick="tipCalculator()">25%</button>
-  <button id="fiftyP" value="50" class="options"onclick="tipCalculator()">50%</button>
+  <button id="fiveP" class="options" value="5" onclick="checkBillInput(), tipCalculator()">5%</button>
+  <button id="tenP" value="10" class="options" onclick="checkBillInput(), tipCalculator()">10%</button>
+  <button id="fifteenP" value="15" class="options" onclick="checkBillInput(), tipCalculator()">15%</button>
+  <button id="twentyFiveP" value="25" class="options" onclick="checkBillInput(), tipCalculator()">25%</button>
+  <button id="fiftyP" value="50" class="options"onclick="checkBillInput(), tipCalculator()">50%</button>
   <div class="custom">
     <label for="custom-input"></label>
-    <input id="custom-input" type="text" placeholder="Custom" onkeypress='validate(event)' onclick="tipCalculator()" >
+    <input id="custom-input" type="text" placeholder="Custom" onkeypress='validate(event)' onclick="checkBillInput(), checkCustomInput(), tipCalculator()" >
   </div> 
   </div>
 </div>
