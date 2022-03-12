@@ -28,6 +28,7 @@ body {
     border-radius: 25px;
     width: 920px;
     height: 480px;
+    margin-bottom: 16rem;
 }
 
 .tip-amount{
@@ -115,7 +116,13 @@ body {
 
 
 
-.options:hover, .custom:hover{
+.options:hover{
+    cursor: pointer;
+    background-color: hsl(172, 100%, 80%);
+    color:hsl(183, 100%, 15%);
+}
+
+.custom:hover{
     cursor: pointer;
 }
 
@@ -175,6 +182,11 @@ body {
     border-radius: 5px;
 }
 
+.active{
+    background-color: hsl(172, 67%, 45%);
+}
+
 .reset-option:hover {
     cursor: pointer;
+    background-color: hsl(172, 100%, 80%);
 }
