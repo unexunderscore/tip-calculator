@@ -66,12 +66,13 @@ body {
     background-color: hsl(189, 41%, 97%);
 }
 
-
+#bill::placeholder, #numbOfPeople::placeholder{
+    color: #9ebbbd;
+}
 
 #bill, #numbOfPeople{
     margin-top: 0.5rem;
     padding-right: 1rem;
-    color: #9ebbbd;
     text-align: right;
     border: none;
     width: 377px;
@@ -79,10 +80,15 @@ body {
     background-color: hsl(189, 41%, 97%);
     border-radius: 5px;
     font-size: 24px;
+    color: hsl(183, 100%, 15%);
 }
 
 .billy label {
     color:  hsl(186, 14%, 43%);
+}
+
+#custom-input{
+    color: hsl(183, 100%, 15%);
 }
 
 #bill:hover, #numbOfPeople, #custom-input{
@@ -91,7 +97,6 @@ body {
 
 #bill:focus, #numbOfPeople:focus, #custom-input:focus{
     outline:  2px solid hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
 }
 
 
@@ -161,21 +166,23 @@ body {
     margin-top: 3.25rem;
 }
 
-.tipAmountSummary {
+#tipAmountSummary {
+    display: none;
     margin-top: 0.1rem;
     font-size: 46px;
     text-align: right;
     color:hsl(172, 67%, 45%);
 }
 
-.totalAmountSummary{
+#totalAmountSummary{
+    display: none;
     margin-top: 1.8rem;
     font-size: 46px;
     text-align: right;
     color:hsl(172, 67%, 45%);
 }
 
-.reset-option {
+#reset-option {
     align-items: center;
     width: 100%;
     padding: 0.6rem 0 0.6rem 0;
@@ -189,11 +196,14 @@ body {
     border: none;
 }
 
-.active{
-    background-color: hsl(172, 67%, 45%);
-}
-
-.reset-option:hover {
+#reset-option:hover {
     cursor: pointer;
     background-color: hsl(172, 100%, 80%);
+}
+
+#errorNumber{
+    display: none;
+    text-align: right;
+    color: rgba(218, 47, 47, 0.685);
+    margin-left: 5rem;
 }

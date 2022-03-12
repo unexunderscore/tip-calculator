@@ -36,7 +36,7 @@
   <div class="billy">
   <label for="bill">Bill</label> <br>
   <img class="dollar-icon" src="./images/icon-dollar.svg" alt="Dollar icon" >
-  <input id="bill" type="text" value="0"  onkeypress='validate(event)'>
+  <input id="bill" type="text" placeholder="0" onkeypress='validate(event)'>
 </div>   
 
 <div class="select-tips">
@@ -45,14 +45,14 @@
   Select Tip %
   </div>
   <div class="group-options">
-  <button id="fiveP" class="options">5%</button>
-  <button id="tenP"  class="options">10%</button>
-  <button id="fifteenP"  class="options">15%</button>
-  <button id="twentyFiveP"  class="options">25%</button>
-  <button id="fiftyP"  class="options">50%</button>
+  <button id="fiveP" class="options" value="5" onclick="tipCalculator()">5%</button>
+  <button id="tenP" value="10" class="options" onclick="tipCalculator()">10%</button>
+  <button id="fifteenP" value="15" class="options" onclick="tipCalculator()">15%</button>
+  <button id="twentyFiveP" value="25" class="options" onclick="tipCalculator()">25%</button>
+  <button id="fiftyP" value="50" class="options"onclick="tipCalculator()">50%</button>
   <div class="custom">
     <label for="custom-input"></label>
-    <input id="custom-input" type="text" value="Custom"  onkeypress='validate(event)'>
+    <input id="custom-input" type="text" placeholder="Custom" onkeypress='validate(event)' onclick="tipCalculator()" >
   </div> 
   </div>
 </div>
@@ -61,9 +61,9 @@
 
   <div class="number-title">
 
-  <label for="numbOfPeople">Number of People</label> <br>
+  <label for="numbOfPeople">Number of People</label> <span id="errorNumber">Can't be zero</span> <br>
   <img class="person-icon" src="./images/icon-person.svg" alt="Person icon" >
-  <input id="numbOfPeople" type="text" value="0"  onkeypress='validate_people(event)'>
+  <input id="numbOfPeople" type="text" placeholder="0"  onkeypress='validate_people(event)'>
 
 </div>
 </div>
@@ -84,11 +84,11 @@
   </div>
   
    <div class="rightSide">
-     <div class="tipAmountSummary">$4.27</div>
-     <div class="totalAmountSummary">$32.79</div>
+     <div id="tipAmountSummary">$4.27</div>
+     <div id="totalAmountSummary">$32.79</div>
   </div>
     </div>
-    <button class="reset-option">Reset</button>
+    <button id="reset-option" onclick="reset()">Reset</button>
   </div> 
    
  
