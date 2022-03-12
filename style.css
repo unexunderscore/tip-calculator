@@ -112,9 +112,13 @@ body {
     border-radius: 5px;
     width: 117px;
     height: 48px;
+    border:none
 }
 
-
+.options:focus{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
 
 .options:hover{
     cursor: pointer;
@@ -172,6 +176,8 @@ body {
 }
 
 .reset-option {
+    align-items: center;
+    width: 100%;
     padding: 0.6rem 0 0.6rem 0;
     text-align: center;
     text-transform: uppercase;
@@ -180,6 +186,7 @@ body {
     color:hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     border-radius: 5px;
+    border: none;
 }
 
 .active{
