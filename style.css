@@ -137,6 +137,44 @@ body {
 
 
 .perPersone{
-    font-size: 14px;
+    margin-top: 0.05rem;
+    font-size: 13px;
     color:hsl(184, 14%, 56%);
+}
+
+.tipPerPersone{
+    margin-top: 1rem;
+}
+
+.totalPerPersone{
+    margin-top: 3.25rem;
+}
+
+.tipAmountSummary {
+    margin-top: 0.1rem;
+    font-size: 46px;
+    text-align: right;
+    color:hsl(172, 67%, 45%);
+}
+
+.totalAmountSummary{
+    margin-top: 1.8rem;
+    font-size: 46px;
+    text-align: right;
+    color:hsl(172, 67%, 45%);
+}
+
+.reset-option {
+    padding: 0.6rem 0 0.6rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 7.5rem;
+    color:hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+
+.reset-option:hover {
+    cursor: pointer;
 }
